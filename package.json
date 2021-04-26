@@ -1,0 +1,23 @@
+{
+  "name": "nodemon-babel-dev",
+  "author": "r1oga",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node  src/index.js"
+  },
+  "nodemonConfig": {
+    "ext": "js, json",
+    "watch": [
+      "src"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.15",
+    "nodemon": "^2.0.7"
+  }
+}
